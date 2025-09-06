@@ -25,6 +25,8 @@
       }
     </script>
     <style>
+      html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+      body { overflow-x: hidden; }
       .reveal{opacity:0;transform:translateY(12px);transition:opacity .55s ease,transform .55s ease}
       .reveal.show{opacity:1;transform:translateY(0)}
       .hovercard{transition:transform .18s ease, box-shadow .18s ease}
@@ -71,13 +73,22 @@
               Manas Pandya
             </h1>
 
-            <div class="mt-2 text-slate-300 text-sm flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-3 gap-y-1">
-              <a class="underline decoration-[1px]" href="mailto:pandyamanas7000@gmail.com">pandyamanas7000@gmail.com</a>
-              <span class="hidden sm:inline opacity-40">|</span>
-              <a class="underline decoration-[1px]" href="tel:+14376635280">+1 (437) 663 – 5280</a>
-              <span class="hidden sm:inline opacity-40">|</span>
-              <span>Toronto, ON</span>
-            </div>
+            <ul class="mt-2 text-slate-300 text-sm flex flex-col sm:flex-row sm:items-center gap-y-1">
+            <li>
+              <a class="underline decoration-[1px]" href="mailto:pandyamanas7000@gmail.com">
+                pandyamanas7000@gmail.com
+              </a>
+            </li>
+            <li class="sm:pl-3 sm:ml-3 sm:border-l sm:border-white/30">
+              <a class="underline decoration-[1px]" href="tel:+14376635280">
+                +1 (437) 663 – 5280
+              </a>
+            </li>
+            <li class="sm:pl-3 sm:ml-3 sm:border-l sm:border-white/30">
+              Toronto, ON
+            </li>
+          </ul>
+
 
             <div class="mt-4 flex flex-wrap gap-3">
               <a href="mailto:pandyamanas7000@gmail.com" aria-label="Send email"
